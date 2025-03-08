@@ -18,11 +18,14 @@ function App() {
       <h1>{count % 2 === 0 ? "Vite" : "React"}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        increase 
+        </button>
+        <button onClick={() => setCount((count) => count - 1)}>
+        decrease 
         </button>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      count is {count}
       </p>
     </>
   )
